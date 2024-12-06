@@ -18,23 +18,27 @@
             font-weight: 600;
         }
         .banner-heading{
-            color: #0c7385;
-        }
-        .button-hover:active{
-            border-color: #0c7385;
-            background-color: none;
-            color: #0c7385;
+            color: #008080;
         }
         .button{
-            background-color: #0c7385;
+            background-color: #008080;
+            border-width: 0px;
             color: white;
-            height: 36px;
+            height: 45px;
             width: 130px;
             border-radius: 5px; 
         }
-        .card{
-            border-color: red;
+        .button:hover{
+            border-width: 1px;
+            border-color: #008080;
+            color: #008080;
+            background-color: white;
+        }    
+        .category-image{
+            height: 25vh;
+            width: 15vw;
         }
+
         .featured-image1{
             background-image: url("./img/product-1-1.jpg");
             background-size: cover;
@@ -131,6 +135,9 @@
             height: 50vh;
             border-radius: 20px;
         }
+        .card{
+            width: 30vw;
+        }
         .alignment{ 
             height: 30px;
             width: 60px;
@@ -140,135 +147,571 @@
             text-align: center;
             margin: 10px;
         }
-
+        .color1{
+            background-color: #fa3c5d9e;
+        }
+        .color2{
+            background-color: #004a568f;
+        }
+        .color3{
+            background-color: #ff450087;
+        }
+        .color4{
+            background-color: skyblue;
+        }
+        .color5{
+            background-color: #0a4b567a;
+        }
+        .deal-card1{
+            background-image: url("./img/deals-1.jpg");
+            background-size: cover;
+            width: 45vw;
+            padding: 30px;
+            margin: 15px;
+        }
+        .deal-card2{
+            background-image: url("./img/deals-2.png");
+            background-size: cover;
+            width: 45vw;
+            padding: 30px;
+            margin: 15px;
+        }
+        .deal-heading{
+            color: #008080;
+            font-size: 26px;
+        }
+        .deal-time{
+            color: white;
+            background-color: #008080;
+            padding: 15px;
+            border-width: 0px;
+            border-radius: 5px;
+        }
+        .deal-colon{
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            top: 13px;
+            font-weight: 500;
+        }
+        .deal-button{
+            border-width: 1px;
+            border-color: #008080;
+            color: #008080;
+            background-color: white;
+            height: 45px;
+            width: 130px;
+            border-radius: 5px; 
+        }
+        .bag-style{
+            height: 5vh;
+        }
+        .icon-bg{
+            background-color: #3da53d29;
+            border-color: red;
+            border-width: 2px;
+            border-radius: 50%;
+            height: 50px;
+            width: 60px;
+            padding: 10px;
+        }
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <header class="d-flex flex-row justify-content-around align-items-center col-12">
-        <img src="./img/logo.png" alt="Header logo" class="logo-img"/>
-        <a href="" class="header-text">Home</a>
-        <a href="" class="header-text">Shop</a>
-        <a href="" class="header-text">My Account</a>
-        <a href="" class="header-text">Compare</a>
-        <a href="" class="header-text">Login</a>
-        <div>
-            <input type="text" placeholder="Search For Items"/>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="bag-outline"></ion-icon>
-        </div>
-    </header>
-    <div class="d-flex flex-row align-items-center m-5">
-        <div class="col-6">
-            <p class="banner-text">Hot Promotions</p>
-            <h2>Fashion Trending</h2>
-            <h1 class="banner-heading">Great Collection</h1>
-            <p>Save more with coupons & up to 20% off</p>
-            <button class="button button-hover">Shop Now</button>
-        </div>
-        <div class="col-6">
-            <img src="./img/home-img.png" alt="banner logo">
+    <div class="container-fluid">
+        <div class="row">
+            <header class="d-flex flex-row justify-content-around align-items-center col-12">
+                <img src="./img/logo.png" alt="Header logo" class="logo-img"/>
+                <a href="" class="header-text">Home</a>
+                <a href="" class="header-text">Shop</a>
+                <a href="" class="header-text">My Account</a>
+                <a href="" class="header-text">Compare</a>
+                <a href="" class="header-text">Login</a>
+                <div>
+                    <input type="text" placeholder="Search For Items"/>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="bag-outline"></ion-icon>
+                </div>
+            </header>
+            <div class="d-flex flex-row align-items-center m-5">
+                <div class="col-6">
+                    <p class="banner-text">Hot Promotions</p>
+                    <h2>Fashion Trending</h2>
+                    <h1 class="banner-heading">Great Collection</h1>
+                    <p>Save more with coupons & up to 20% off</p>
+                    <button class="button">Shop Now</button>
+                </div>
+                <div class="col-6">
+                    <img src="./img/home-img.png" alt="banner logo">
+                </div>
+            </div>
+            <div class="m-5">
+                <h1>Popular Categories</h1>
+                <div class="d-flex col-12 flex-nowrap">
+                    <div class="card p-3 m-3" class="w-auto">
+                        <img src="./img/category-1.jpg" alt="category image" class="category-image"/>
+                        <h5 class="text-center text-grey p-3">T-Shirt</h5>
+                    </div>
+                    <div class="card p-3 m-3 border-success">
+                        <img src="./img/category-2.jpg" alt="category image" class="category-image"/>
+                        <h5 class="text-center text-grey p-3">bags</h5>
+                    </div>
+                    <div class="card p-3 m-3 border-success">
+                        <img src="./img/category-3.jpg" alt="category image" class="category-image"/>
+                        <h5 class="text-center text-grey p-3">Sandal</h5>
+                    </div>
+                    <div class="card p-3 m-3 border-success">
+                        <img src="./img/category-4.jpg" alt="category image" class="category-image"/>
+                        <h5 class="text-center text-grey p-3">Scraf Cap</h5>
+                    </div>
+                    <div class="card p-3 m-3 border-success">
+                        <img src="./img/category-5.jpg" alt="category image" class="category-image"/>
+                        <h5 class="text-center text-grey p-3">Shoes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="m-4">
+                <button>Featured</button>
+                <button>Popular</button>
+                <button>New Added</button>
+            </div>
+            <div class="m-4 d-flex flex-wrap">
+                <div class="card  ml-5 mr-2 mt-2 p-3">
+                    <div class="featured-image1">
+                        <p class="alignment color1">Hot</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <div>
+                        <div>
+                            <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  mr-2 mt-2 p-3">
+                    <div class="featured-image2">
+                        <p class="alignment color2">Hot</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+                <div class="card  mr-2 mt-2 p-3">
+                    <div class="featured-image3">
+                        <p class="alignment color3">Hot</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+                <div class="card mr-2 mt-2 ml-5 p-3">
+                    <div class="featured-image4">
+                        <p class="alignment color4">Hot</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+                <div class="card  mr-2 mt-2 p-3">
+                    <div class="featured-image5">
+                        <p class="alignment color4">-30%</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+                <div class="card mr-2 mt-2 p-3">
+                    <div class="featured-image6">
+                        <p class="alignment color4">-22%</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+                <div class="card mr-2 mt-2 ml-5 p-3">
+                    <div class="featured-image7">
+                        <p class="alignment color5">-22%</p>
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+                <div class="card mr-2 mt-2 p-3">
+                    <div class="featured-image8">
+        
+                    </div>
+                    <p>Clothing</p>
+                    <h1>Colorful Pattern Shirts</h1>
+                    <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                </div>
+            </div>
+            <div class="d-flex m-5">
+                <div class="deal-card1 ">
+                    <h1 class="deal-heading">Deals of the Day</h1>
+                    <p style="color: grey;">Limited quantities</p>
+                    <h5>Summer Collection New <br/>Modren Design</h5>
+                    <p style="color: #f24354; font-weight: 500;">$139.00 <span style="color: grey; text-decoration: line-through; font-weight: 300;">$160.99</span></p>
+                    <p>Hurry Up! Offer Ends In:</p>
+                    <div class="d-flex">
+                        <div>
+                            <p class="deal-time">02</p>
+                            <p class="text-center">Days</p>
+                        </div>
+                        <p class="deal-colon">:</p>
+                        <div>
+                            <p class="deal-time">22</p>
+                            <p class="text-center">Hours</p>
+                        </div>
+                        <p class="deal-colon">:</p>
+                        <div>
+                            <p class="deal-time">57</p>
+                            <p class="text-center">Mins</p>
+                        </div>
+                        <p class="deal-colon">:</p>
+                        <div>
+                            <p class="deal-time">28</p>
+                            <p class="text-center">Sec</p>
+                        </div>
+                    </div>
+                    <button class="deal-button">Shop Now</button>
+                </div>
+                <div class="deal-card2">
+                    <h1 class="deal-heading">Women Clothing</h1>
+                    <p style="color: grey;">Shirts & Bag</p>
+                    <h5>Try Something new on <br/>vacation</h5>
+                    <p style="color: #f24354; font-weight: 500;">$178.00 <span style="color: grey; text-decoration: line-through; font-weight: 300;">$256.99</span></p>
+                    <p>Hurry Up! Offer Ends In:</p>
+                    <div class="d-flex">
+                        <div>
+                            <p class="deal-time">02</p>
+                            <p class="text-center">Days</p>
+                        </div>
+                        <p class="deal-colon">:</p>
+                        <div>
+                            <p class="deal-time">22</p>
+                            <p class="text-center">Hours</p>
+                        </div>
+                        <p class="deal-colon">:</p>
+                        <div>
+                            <p class="deal-time">57</p>
+                            <p class="text-center">Mins</p>
+                        </div>
+                        <p class="deal-colon">:</p>
+                        <div>
+                            <p class="deal-time">28</p>
+                            <p class="text-center">Sec</p>
+                        </div>
+                    </div>
+                    <button class="deal-button">Shop Now</button>
+                </div>
+            </div>
+            <div class="m-5">
+                <h1>New Arrivals</h1>
+                <div class="d-flex">
+                    <div class="card mr-2 mt-2 p-3 col-3">
+                        <div class="featured-image1" style="height: 35vh;">
+                            <p class="alignment color1">Hot</p>
+                        </div>
+                        <p>Clothing</p>
+                        <h1>Colorful Pattern Shirts</h1>
+                        <div class="d-flex">
+                            <div>
+                                <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                                <p>$238.85 <span>$245.8</span></p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-bag-plus icon-bg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"/>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="card  mr-2 mt-2 p-3 col-3">
+                        <div class="featured-image2" style="height: 35vh;">
+                            <p class="alignment color2">Hot</p>
+                        </div>
+                        <p>Clothing</p>
+                        <h1>Colorful Pattern Shirts</h1>
+                        <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                        <div class="d-flex">
+                            <div>
+                                <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                                <p>$238.85 <span>$245.8</span></p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-bag-plus icon-bg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"/>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="card  mr-2 mt-2 p-3 col-3">
+                        <div class="featured-image3 color3" style="height: 35vh;">
+                            <p class="alignment color3">Hot</p>
+                        </div>
+                        <p>Clothing</p>
+                        <h1>Colorful Pattern Shirts</h1>
+                        <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                        <div class="d-flex">
+                            <div>
+                                <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                                <p>$238.85 <span>$245.8</span></p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-bag-plus icon-bg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"/>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                              </svg>
+                        </div>
+                    </div>
+                    <div class="card  mr-2 mt-2 p-3 col-3">
+                        <div class="featured-image4" style="height: 35vh;">
+                            <p class="alignment color4">Hot</p>
+                        </div>
+                        <p>Clothing</p>
+                        <h1>Colorful Pattern Shirts</h1>
+                        <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                        <div class="d-flex">
+                            <div>
+                                <img src="./img/star.jpg" alt="star image" class="w-25"/>
+                                <p>$238.85 <span>$245.8</span></p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-bag-plus icon-bg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5"/>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-5 d-flex">
+                <div class="mr-5">
+                    <h3>Hot Releases</h3><hr>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-1.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class=" pr-5 p-4">
+                            <p>Floral Print Casual Cotton Dress</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-2.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Ruffled Solid Long Sleeve Blouse</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-3.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Multi-Color Print V-neck T-shirt</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mr-5">
+                    <h3>Deal & Outlet</h3><hr>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-1.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class=" pr-5 p-4">
+                            <p>Fish Print Patched T-shirt</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-2.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Fintage Floral Print Dress</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-3.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Multi - Color Stripe Circle T-shirt</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mr-5">
+                    <h3>Top Selling</h3><hr>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-1.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class=" pr-5 p-4">
+                            <p>Geometric Printed Long Sleeve Blouse</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-2.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Print Patchwork Maxi Dress</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-3.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Daisy Floral Print SWtraps Jumpsuit</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mr-5">
+                    <h3>Trendy</h3><hr>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-1.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class=" pr-5 p-4">
+                            <p>Floral Print Casual Cotton</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-2.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Ruffled Solid Long Sleeve</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 mr-4">
+                        <img src="./img/showcase-img-3.jpg" alt="hot release image" style="height: 14vh;">
+                        <div class="pr-5 p-4">
+                            <p>Multi - Colro Print V-neck</p>
+                            <p>$238.85 <span>$245.8</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M405.333,213.874V106.667c0-23.531-19.135-42.667-42.667-42.667h-320C19.135,64,0,83.135,0,106.667V320
+                                c0,23.531,19.135,42.667,42.667,42.667h239.215C295.858,411.84,341.073,448,394.667,448c20.625,0,40.906-5.427,58.677-15.708
+                                c5.094-2.948,6.844-9.469,3.885-14.573c-2.948-5.104-9.479-6.865-14.573-3.885c-14.521,8.396-31.115,12.833-47.99,12.833
+                                c-52.938,0-96-43.063-96-96s43.063-96,96-96s96,43.063,96,96v10.667c0,11.76-9.573,21.333-21.333,21.333
+                                c-11.76,0-21.333-9.573-21.333-21.333v-42.667c0-5.896-4.771-10.667-10.667-10.667c-2.869,0-5.447,1.161-7.362,3
+                                c-9.428-8.401-21.714-13.667-35.305-13.667c-29.406,0-53.333,23.927-53.333,53.333S365.26,384,394.667,384
+                                c15.896,0,30.03-7.131,39.81-18.202c7.727,10.977,20.44,18.202,34.857,18.202C492.865,384,512,364.865,512,341.333v-10.667
+                                C512,269.569,465.044,219.288,405.333,213.874z M42.667,85.333h320c0.444,0,0.816,0.227,1.254,0.254L211.438,210.75
+                                c-5.427,3.417-13.292,2.708-16.823,0.542L41.426,85.585C41.859,85.559,42.227,85.333,42.667,85.333z M384,213.874
+                                c-59.711,5.414-106.667,55.695-106.667,116.793c0,3.6,0.221,7.148,0.54,10.667H42.667c-11.76,0-21.333-9.573-21.333-21.333
+                                V106.667c0-3.021,0.667-5.874,1.805-8.48l158.883,130.293c6.208,4.052,13.344,6.188,20.646,6.188
+                                c7.021,0,13.885-1.979,19.927-5.729c0.604-0.323,1.177-0.708,1.719-1.156l157.88-129.598c1.139,2.608,1.807,5.461,1.807,8.483
+                                V213.874z M394.667,362.667c-17.646,0-32-14.354-32-32c0-17.646,14.354-32,32-32s32,14.354,32,32
+                                C426.667,348.313,412.313,362.667,394.667,362.667z"/>
+                        </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    </svg>
+                    <p>sign in to Newsletter</p>
+                </div>
+                <p>...and recieve $25 coupon for first shoping.</p>
+                <div>
+                    <input type="email" placeholder="Enter Your Email"/>
+                    <button>Subscribe</button>
+                </div>
+                
+            </div>
+            <div class="d-flex m-5">
+                <div class="col-3">
+                    <img src="./img/logo.png" alt="logo">
+                    <p>Contact</p>
+                    <p><span>Address: </span>13 Tlecen Road, Street 32, Beb-Wahren</p>
+                    <p><span>Phone: </span>+01 2222 365 /(+91) 01 2345 6789</p>
+                    <p><span>Hours: </span>10:00 - 18:00, Mon - Sat</p>
+                    <p>Follow Me</p>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 124 124" viewBox="0 0 124 124"><path fill="#333033" fill-rule="evenodd" d="M50.1,62.4v44.4c0,0.6,0.5,1.2,1.2,1.2h16.5c0.6,0,1.2-0.5,1.2-1.2V61.6h11.9
+                            c0.6,0,1.1-0.5,1.2-1.1L83.1,47c0.1-0.7-0.5-1.3-1.2-1.3H68.9v-9.6c0-2.3,1.8-4.1,4.1-4.1h9.2c0.6,0,1.2-0.5,1.2-1.2V17.3
+                            c0-0.6-0.5-1.2-1.2-1.2H66.6c-9.1,0-16.5,7.4-16.5,16.5v13.1h-8.2c-0.6,0-1.2,0.5-1.2,1.2v13.6c0,0.6,0.5,1.2,1.2,1.2h8.2V62.4z" clip-rule="evenodd"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 124 124" viewBox="0 0 124 124"><path fill="#333033" d="M106.3,36.6c-2.8,1.3-6,2.1-9,2.6c1.5-0.2,3.6-2.9,4.5-3.9c1.3-1.6,2.4-3.5,3-5.5
+                            c0.1-0.2,0.1-0.4,0-0.5c-0.2-0.1-0.3,0-0.5,0c-3.4,1.8-6.9,3.2-10.7,4.1c-0.3,0.1-0.5,0-0.7-0.2c-0.3-0.4-0.6-0.7-0.9-1
+                            c-1.6-1.3-3.3-2.4-5.2-3.2c-2.5-1-5.3-1.5-8-1.3c-2.6,0.2-5.2,0.9-7.5,2.1c-2.3,1.2-4.4,2.9-6.1,5c-1.7,2.1-3,4.6-3.6,7.3
+                            c-0.6,2.6-0.6,5.1-0.2,7.7c0.1,0.4,0,0.5-0.4,0.4C46.2,48.1,34,42.9,24.1,31.6c-0.4-0.5-0.7-0.5-1,0c-4.3,6.5-2.2,16.9,3.2,22.1
+                            c0.7,0.7,1.5,1.4,2.3,2c-0.3,0.1-3.9-0.3-7.1-2c-0.4-0.3-0.6-0.1-0.7,0.4c0,0.7,0,1.3,0.1,2.1c0.8,6.6,5.4,12.7,11.6,15
+                            c0.7,0.3,1.6,0.6,2.4,0.7c-1.4,0.3-2.9,0.5-7,0.2c-0.5-0.1-0.7,0.2-0.5,0.6C30.4,81.1,37,83.6,42,85c0.7,0.1,1.3,0.1,2,0.3
+                            c0,0.1-0.1,0.1-0.1,0.1c-1.6,2.5-7.3,4.4-10,5.3c-4.8,1.7-10.1,2.4-15.2,1.9c-0.8-0.1-1-0.1-1.2,0c-0.2,0.1,0,0.3,0.2,0.5                       
+                            c1,0.7,2.1,1.3,3.2,1.9c3.2,1.7,6.6,3.1,10.1,4.1c18.2,5,38.8,1.3,52.5-12.3C94.2,76.2,98,61.5,98,46.7c0-0.6,0.7-0.9,1.1-1.2
+                            c2.8-2.1,5-4.6,7.1-7.4c0.5-0.6,0.4-1.2,0.4-1.4c0,0,0-0.1,0-0.1C106.6,36.4,106.7,36.4,106.3,36.6z"/><path fill="#333033" fill-rule="evenodd" d="M43.9 101C51.4 101 44.2 101 43.9 101 44.9 101 43.8 101 43.9 101zM43.9 101C43.8 101 42.4 101 43.9 101 43.9 101 43.6 101 43.9 101zM46.9 101.1C46.9 100.9 48.5 101.1 46.9 101.1 46.9 101 47.1 101.1 46.9 101.1zM78.5 27.9c-.1.1-.2.1-.4 0C78.2 27.9 78.4 27.9 78.5 27.9z" clip-rule="evenodd"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 124 124" viewBox="0 0 124 124"><path fill="#333033" d="M87.2,33.6c-3.1,0-5.6,2.5-5.6,5.6c0,3.1,2.5,5.6,5.6,5.6c3.1,0,5.6-2.5,5.6-5.6
+                            C92.8,36.1,90.3,33.6,87.2,33.6z M62.2,40.8c-13,0-23.6,10.6-23.6,23.6s10.6,23.6,23.6,23.6s23.6-10.6,23.6-23.6
+                            S75.2,40.8,62.2,40.8z M62.2,79.6c-8.4,0-15.1-6.8-15.1-15.1c0-8.4,6.8-15.1,15.1-15.1c8.4,0,15.1,6.8,15.1,15.1
+                            C77.3,72.8,70.5,79.6,62.2,79.6z M109.9,44.8c0-15.9-12.9-28.8-28.8-28.8H43c-15.9,0-28.8,12.9-28.8,28.8v38.1
+                            c0,15.9,12.9,28.8,28.8,28.8H81c15.9,0,28.8-12.9,28.8-28.8V44.8z M100.8,82.8c0,10.9-8.9,19.8-19.8,19.8H43
+                            c-10.9,0-19.8-8.9-19.8-19.8V44.8C23.2,33.8,32,25,43,25H81c10.9,0,19.8,8.9,19.8,19.8V82.8z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 124 124" viewBox="0 0 124 124"><path fill="#333033" d="M67.8,83.8c-5.5-0.4-7.8-3.1-12.1-5.7c-1.9,10-4.2,19.7-9.5,26.3c-1.6,1.9-4.7,1-4.8-1.5
+                            c-0.8-16,4.7-28.7,7.4-42c-5.1-8.7,0.6-26.1,11.5-21.8c13.4,5.3-11.6,32.2,5.2,35.6C83,78.1,90.2,44.3,79.3,33.3
+                            c-15.7-15.9-45.6-0.4-41.9,22.4c0.7,4.3,4.3,6.3,3.9,10.6c-0.3,2.7-3,4.2-5.4,3.1c-6.9-3.2-9.1-10.3-8.8-19.4
+                            c0.6-17.2,15.5-29.3,30.4-31c18.9-2.1,36.6,6.9,39,24.7C99.3,63.6,88,85.3,67.8,83.8L67.8,83.8z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 124 124" viewBox="0 0 124 124"><path fill="#333033" d="M107.2,50c0-10.9-8.8-19.7-19.7-19.7h-51c-10.9,0-19.7,8.8-19.7,19.7V74
+                            c0,10.9,8.8,19.7,19.7,19.7h51c10.9,0,19.7-8.8,19.7-19.7V50z M75,63.2L54.7,74.4c-0.9,0.5-1.7-0.2-1.7-1.2V50.3
+                            c0-1,0.8-1.7,1.7-1.2l20.5,11.7C76.1,61.4,75.9,62.7,75,63.2z"/></svg>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h1>Address</h1>
+                    <p>About Us</p>
+                    <p>Delivery Infprmation</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Contact Us</p>
+                    <p>Support Center</p>
+                </div>
+                <div class="col-3">
+                    <h1>My Account</h1>
+                    <p>Sign In</p>
+                    <p>View Cart</p>
+                    <p>My Wishlist</p>
+                    <p>Track My Order</p>
+                    <p>Help</p>
+                    <P>Order</P>
+                </div>
+                <div class="col-3">
+                    <h1>Secured Payed Gateways</h1>
+                    <img src="./img/payment-method.png" alt="payment image">
+                </div>
+            </div>
+            <div class="m-5 d-flex justify-content-between">
+                <p>2024 HARI PRIYA. All right reserved</p>
+                <p>Designer by HARIPRIYA J</p>
+            </div>
         </div>
     </div>
-    <div class="m-5">
-        <h1>Popular Categories</h1>
-        <div class="d-flex">
-            <div class="card p-3 m-3">
-                <img src="./img/category-1.jpg" alt="category image"/>
-                <h5 class="text-center text-grey p-3">T-Shirt</h5>
-            </div>
-            <div class="card p-3 m-3 border-success">
-                <img src="./img/category-2.jpg" alt="category image"/>
-                <h5 class="text-center text-grey p-3">bags</h5>
-            </div>
-            <div class="card p-3 m-3 border-success">
-                <img src="./img/category-3.jpg" alt="category image"/>
-                <h5 class="text-center text-grey p-3">Sandal</h5>
-            </div>
-            <div class="card p-3 m-3 border-success">
-                <img src="./img/category-4.jpg" alt="category image"/>
-                <h5 class="text-center text-grey p-3">Scraf Cap</h5>
-            </div>
-            <div class="card p-3 m-3 border-success">
-                <img src="./img/category-5.jpg" alt="category image"/>
-                <h5 class="text-center text-grey p-3">Shoes</h5>
-            </div>
-        </div>
-    </div>
-    <div class="m-5">
-        <button>Featured</button>
-        <button>Popular</button>
-        <button>New Added</button>
-    </div>
-    <div class="m-5 d-flex flex-wrap">
-        <div class="card m-3 p-3">
-            <div class="featured-image1">
-                <p class="alignment bg-pink">Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
 
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image2">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image3">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image4">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image5">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image6">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image7">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-        <div class="card m-3 p-3">
-            <div class="featured-image8">
-                <p>Hot</p>
-            </div>
-            <p>Clothing</p>
-            <h1>Colorful Pattern Shirts</h1>
-
-        </div>
-    </div>
-    
-    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
